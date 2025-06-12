@@ -1,0 +1,39 @@
+package com.Day4.telecom;
+
+public abstract class BaseService implements TelecomService {
+    protected String serviceName;
+    protected double ratePerUnit;
+
+    public BaseService(String serviceName, double rateRatePerUnit) {
+        this.serviceName = serviceName;
+        this.ratePerUnit = rateRatePerUnit;
+    }
+
+    @Override
+    public void start() {
+        System.out.println(serviceName + " started.");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println(serviceName + " stopped.");
+    }
+
+    @Override
+    public void billCustomer(int units) {
+        double amount = units * ratePerUnit;
+        processPayment(units, amount);
+    }
+    
+    @Override
+    public void billCustomer(int units, double discountPercentage) {
+    	double grossAmount = units * ratePerUnit;
+    	double discount = grossAmount * (discountPercentage / 100);
+    	double netAmount = grossAmount - discount;
+    	processPayment(units, netAmount);
+    }
+
+
+    // Abstract: subclasses provide their own payment routing logic
+    protected abstract void processPayment(int units, double amount);
+}
