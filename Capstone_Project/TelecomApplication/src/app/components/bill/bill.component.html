@@ -1,0 +1,56 @@
+<div class="block-div">
+  <div class="heading-box">
+    <h1>Customer Bills</h1>
+  </div>
+  <app-toast></app-toast>
+  <p-confirmDialog></p-confirmDialog>
+
+  <div>
+        <div class="block-div-box">
+          <div class="table-responsive">
+            <p-table [value]="filteredData" [(selection)]="selectedRow" selectionMode="single" [paginator]="true"
+              [rows]="10" [rowsPerPageOptions]="[5, 10, 20]" [resizableColumns]="true" [sortMode]="'multiple'" (onRowSelect)="onRowSelect($event)">
+              <!-- Table Header -->
+              <ng-template pTemplate="header">
+                <tr>
+                  <th pSortableColumn="customerName">Customer <p-sortIcon field="customerName"></p-sortIcon></th>
+                  <th pSortableColumn="planName">Plan Name <p-sortIcon field="planName"></p-sortIcon></th>
+                  <th pSortableColumn="totalDataUsed">Total Data Used <p-sortIcon field="totalDataUsed"></p-sortIcon></th>
+                  <th pSortableColumn="totalTalkTime">Total TalkTime <p-sortIcon field="totalTalkTime"></p-sortIcon></th>
+                  <th pSortableColumn="totalAmount">Total Amount <p-sortIcon field="totalAmount"></p-sortIcon></th>
+                  <th pSortableColumn="billingDate">Billing Date <p-sortIcon field="billingDate"></p-sortIcon></th>
+                </tr>
+              </ng-template>
+
+              <!-- Table Body -->
+              <ng-template pTemplate="body" let-element>
+                <tr [pSelectableRow]="element">
+                  <td>{{element.customerName}}</td>
+                  <td>{{element.planName}}</td>
+                  <td>{{element.totalDataUsed | number: '1.0-3'}} MB</td>
+                  <td>{{element.totalTalkTime}} min</td>
+                  <td>Rs. {{element.totalAmount | number: '1.0-2'}}</td>
+                  <td>{{element.billingDate | date:'dd-MM-yyyy'}}</td>
+                </tr>
+
+              </ng-template>
+
+              <!-- Empty Message -->
+              <ng-template pTemplate="emptymessage">
+                <tr>
+                  <td colspan="6">No records found</td>
+                </tr>
+              </ng-template>
+
+
+              <ng-template pTemplate="footer">
+                <tr>
+                  <td colspan="6">Total records: {{ filteredData.length }}</td>
+                </tr>
+              </ng-template>
+            </p-table>
+          </div>
+        </div>
+  </div>
+
+</div>

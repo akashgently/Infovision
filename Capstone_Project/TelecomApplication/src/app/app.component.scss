@@ -1,0 +1,116 @@
+
+app-header{
+    width: 100% !important;
+    display: inline-block;
+    vertical-align: top;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+app-sidebar-menu{
+    display:block;
+    width: 12%;
+    /* vertical-align: top; */
+    float: left;
+    height: 100%;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.toggle_sidebar{
+    display: inline-block;
+    color: #000!important;
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    left:11vw;
+    z-index: 20;
+    background:none;
+    padding: 12px 10px;
+    border-radius: 0px 8px 8px 0px;
+    top: 5px;
+    margin: 0 0 0 0px;
+}
+.toggle_sidebar_open{
+    left:5vw;
+}
+.open{
+  width:5%;
+  padding:0px;
+  display: inline-block;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+.open .navbar a{
+    visibility: hidden !important;
+}
+.open nav .collapse_a ul li a{
+   display:none !important
+
+}
+.eright{
+    width:100%; 
+    transition: width 0.3s ease;
+    padding: 0;
+//   overflow: hidden; 
+}
+.eright_main{
+    width: 95%;
+    transition: width 0.3s ease;
+    padding: 15px 15px 4rem 15px;
+}
+
+.toggle{
+  display:inline-block;
+}
+.wth100{
+    width:100% !important;
+    overflow: hidden !important;
+}
+@media only screen and (min-width: 320px) and (max-width: 991px){
+    app-sidebar-menu {
+        display: block;
+        width: 45%;
+        float: left;
+        transition: width 0.3s ease;
+        overflow: auto;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+    }
+.toggle_sidebar {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    left: 2vw;
+    z-index: 20;
+    background: none;
+    padding: 12px 10px;
+    border-radius: 0px 8px 8px 0px;
+    top: auto;
+    margin: 0 0 0 0px;
+}
+.toggle_sidebar_open {
+    left: 2vw;
+}
+.open {
+    width: 0%;
+    padding: 0px;
+    display: none;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+.eright_main {
+    width: 100%;
+    transition: width 0.3s ease;
+    padding: 10px 0px 10px 7px;
+    overflow: auto !important;
+    display: inline-block;
+}
+.wth100[_ngcontent-ng-c3845749172] {
+    width: 100% !important;
+}
+
+}

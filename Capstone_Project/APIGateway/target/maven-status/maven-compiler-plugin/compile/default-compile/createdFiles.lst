@@ -1,0 +1,6 @@
+com\APIGateway\filter\AuthenticationFilter$Config.class
+com\APIGateway\ApiGatewayApplication.class
+com\APIGateway\config\AppConfig.class
+com\APIGateway\filter\RouteValidator.class
+com\APIGateway\util\JwtUtil.class
+com\APIGateway\filter\AuthenticationFilter.class

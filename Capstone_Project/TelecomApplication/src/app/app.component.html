@@ -1,0 +1,19 @@
+<div class="content_box">
+   <!-- Toggle button for the sidebar -->
+    
+   <span *ngIf="showSidebarAndHeader" [ngClass]="{'toggle_sidebar_open': isSideBarEight}" class="toggle_sidebar" (click)="toggleButton()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </span>
+
+  <!-- Header, only show if not on login, forgot-password, or reset-password -->
+  <app-header *ngIf="showSidebarAndHeader" [ngClass]="{'eright': isSideBarEight}" [show]="show"></app-header>
+  <!-- Sidebar, only show if not on login, forgot-password, or reset-password -->
+  <app-sidebar-menu *ngIf="showSidebarAndHeader" [ngClass]="{'open': isSideBarOpen}"></app-sidebar-menu>
+
+ 
+
+  <!-- Main content box -->
+  <div class="main-box" [ngClass]="{'eright_main': isSideBarEight,'wth100':!showSidebarAndHeader}">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,138 @@
+<p-confirmDialog></p-confirmDialog>
+<app-toast></app-toast>
+<div class="wrapper-container">
+
+    <mat-tab-group  [(selectedIndex)]="selectedTabIndex" #tabs  (selectedTabChange)="onViewTabSelect($event)" >
+      <mat-tab label="View" >
+        <div class="block-div-box">
+          <div class="table-responsive">
+            <p-table
+              [value]="filteredData"
+              [(selection)]="selectedRow"
+              selectionMode="single"
+              [paginator]="true"
+              [rows]="10"
+              [rowsPerPageOptions]="[5, 10, 20]"
+              [resizableColumns]="true"
+              [sortMode]="'multiple'">
+              <ng-template pTemplate="header">
+                <tr>
+                  <th pSortableColumn="id">Plan Id <p-sortIcon field="id"></p-sortIcon></th>
+                  <th pSortableColumn="name">Plan Name <p-sortIcon field="name"></p-sortIcon></th>
+                  <th pSortableColumn="type">Plan Type <p-sortIcon field="type"></p-sortIcon></th>
+                  <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
+                  <th>Actions</th>
+                </tr>
+              </ng-template>
+
+              <!-- Table Body -->
+              <ng-template pTemplate="body" let-element>
+                <tr [pSelectableRow]="element">
+                  <td>{{element.id}}</td>
+                  <td>{{element.name}}</td>
+                  <td>{{element.type}}</td>
+                  <td>{{element.price}}</td>
+                  <td>
+                    <button class="edit-icon" (click)="EditDetails(element)">
+                      <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button class="delete-icon" (click)="delete(element)" >
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </ng-template>
+
+              <!-- Empty Message -->
+              <ng-template pTemplate="emptymessage">
+                <tr>
+                  <td colspan="4">No records found</td>
+                </tr>
+              </ng-template>
+
+
+              <ng-template pTemplate="footer">
+                <tr>
+                  <td colspan="4">Total records: {{ filteredData.length }}</td>
+                </tr>
+              </ng-template>
+            </p-table>
+          </div>
+        </div>
+
+
+      </mat-tab>
+      <mat-tab [label]="openTab ? 'Edit' : 'Add'">
+
+        <form  #userForm="ngForm" class="form-container">
+          <div class="form-row">
+            <div class="col-md-4 form-group input-row">
+              <label class="cat__core__step__title">Plan Name<span class="text-danger">
+                  *</span> </label>
+                  <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="planName" [ngModelOptions]="{standalone: true}"
+                   name="planName" required placeholder="Enter Role Name" [ngClass]="{ 'is-invalid': !planName && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !planName ">Plan Name is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+                  <label class="cat__core__step__title">Plan Type<span class="text-danger">
+                      *</span> </label>
+                      <p-dropdown [options]="typeList" [(ngModel)]="type" [ngModelOptions]="{standalone: true}" [filter]="true" filterBy="typeName"
+                      [showClear]="true" placeholder="Select Type" [dropdownIcon]="'none'" [resetFilterOnHide]="true" optionValue="typeValue"
+                      optionLabel="typeName" [ngClass]="{ 'is-invalid': !type && !isValidated }">
+                    </p-dropdown>
+                  <small class="text-danger" *ngIf="!isValidated && !type">Plan Type is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+              <label class="cat__core__step__title">Price<span class="text-danger">
+                  *</span> </label>
+                  <input type="number" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="price" [ngModelOptions]="{standalone: true}"
+                   name="price" required placeholder="Enter Price" [ngClass]="{ 'is-invalid': !price && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !price ">Price is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+              <label class="cat__core__step__title">Validity<span class="text-danger">
+                  *</span> </label>
+                  <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="validity" [ngModelOptions]="{standalone: true}"
+                   name="validity" required placeholder="Enter Validity" [ngClass]="{ 'is-invalid': !validity && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !validity ">Validity is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+              <label class="cat__core__step__title">Features<span class="text-danger">
+                  *</span> </label>
+                  <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="features" [ngModelOptions]="{standalone: true}"
+                   name="features" required placeholder="Enter Features" [ngClass]="{ 'is-invalid': !features && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !features">Features is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+              <label class="cat__core__step__title">Data(Cost per GB)<span class="text-danger">
+                  *</span> </label>
+                  <input type="number" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="costPerGB" [ngModelOptions]="{standalone: true}"
+                   name="costPerGB" required placeholder="Enter Data Cost per GB" [ngClass]="{ 'is-invalid': !costPerGB && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !costPerGB ">Data(Cost per GB) is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+              <label class="cat__core__step__title">TalkTime(Cost per Minute)<span class="text-danger">
+                  *</span> </label>
+                  <input type="number" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="costPerMinute" [ngModelOptions]="{standalone: true}"
+                   name="costPerMinute" required placeholder="Enter TalkTime Cost per minute" [ngClass]="{ 'is-invalid': !costPerMinute && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !costPerMinute ">TalkTime(Cost per Minute) is required</small>
+              </div>
+              </div>
+
+
+          <div class="form-actions">
+            <button type="submit" *ngIf="!openTab" class="btn-save clr-btn" (click)="save()">Submit</button>
+            <button type="submit" *ngIf="openTab" class="btn-save clr-btn" (click)="update()">Update</button>
+
+          </div>
+        </form>
+      </mat-tab>
+    </mat-tab-group>
+</div>
+
+
+
+
+
+
+

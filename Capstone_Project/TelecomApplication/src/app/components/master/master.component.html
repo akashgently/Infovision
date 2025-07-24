@@ -1,0 +1,13 @@
+<div class="block-div">
+  <div class="heading-box">
+    <h1>Master - <span>{{ currentComponent }}</span></h1>
+  </div>
+
+  <div class="custom-tab-container">
+    <a class="custom-tab-item unselectable" routerLink="/master/plan" [ngClass]="{ 'active': currentComponent === 'Plan' }" (click)="updateCurrentComponent('Plan')">Plan</a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+

@@ -1,0 +1,713 @@
+.hdr_cf{
+    padding: 0 0;
+    display: inline-block;
+    position: relative;
+  }
+  .hdr_cf header{
+    /* display: flex;
+    width: 100%;
+    background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    box-shadow: 0px 3px 6px #0000001A;
+    opacity: 1;
+    padding: 10px 10px;
+    align-items: center; */
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 3px 6px #0000001A;
+    opacity: 1;
+    padding: 10px 10px;
+    align-items: center;
+  }
+  .pv_logo_div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 0%;
+  }
+  .pv_logo_div a{
+    display: inline-block;
+    width:100%;
+    font-size:16px;
+    color: #fff;
+  }
+
+  .pv_nf_pf a{
+    font-size:16px;
+    color: #fff;
+  }
+
+  .pv_logo_div a img{
+    display: inline-block;
+    width: 30%;
+    border-radius: 3px;
+    margin: 0 5px 0 0;
+  }
+
+  .pv_search_div{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+  }
+  .pv_search_div .search_div {
+    background: #FFFBF6 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    border: 1px solid #FFFBF6;
+    opacity: 1;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 3px;
+    float: left;
+  }
+  .dt_div{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    width: 50%;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 2%;
+  }
+  .dt_div p{
+    margin: 0 0;
+  }
+  .pv_search_div .search_div img{
+    display: inline-block;
+    width: auto;
+  }
+  .pv_search_div .search_div input{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    color: #000000;
+  }
+  .pv_nf_pf {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0px 0 0;
+    align-items: center;
+    position: relative;
+    left: 20px;
+  }
+  .pv_nf_pf button{
+    display: inline-block;
+    background: none;
+    padding: 10px;
+    width: auto;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 15px;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 5px;
+  }
+  .pv_nf_pf .profile{
+    display: inline-block;
+  }
+  .pv_nf_pf .profile img{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  .pv_nf_pf button img{
+    display: inline-block;
+    width: 70%;
+    padding: 2px;
+  }
+  .pv_nf_pf .dropdown{
+    display: inline-block;
+    width: 10%;
+    border-radius: 50%;
+  }
+  .pv_nf_pf .dropdown button{
+    padding:0px;
+    background: #e7e7e7;
+    border-radius:4px;
+    width: 100%;
+  }
+  .pv_nf_pf .dropdown button img{
+    display: inline-block;
+    width: 100%;
+    border-radius:4px;
+  }
+  .pv_nf_pf .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    letter-spacing: 0.42px;
+    color: #212121;
+    opacity: 1;
+    font-size: 14px;
+  }
+  .pv_nf_pf .dropdown-item i{
+    color: #B1CAE4;
+    font-size: 18px;
+  }
+
+  .notifications_big i{
+    font-size: 32px;
+    color: #000;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .side_logo_div {
+    padding: 0;
+    width: 14%;
+    margin-left: 10px;
+  }
+  .side_logo_div .small img{
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+  }
+  .side_logo_div .big img{
+    cursor: pointer;
+    width: 135px;
+
+  }
+  .profile {
+    position: relative; 
+    cursor: pointer; 
+}
+
+.pv_nf_pf .profile {
+  display: inline-block;
+  position: relative; 
+  cursor: pointer; 
+}
+
+.pv_nf_pf .profile img,
+.pv_nf_pf .profile .profile1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #4d4d4a; /* Default background for initials */
+  color: #fff5df; /* Text color */
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+#slideout {
+  background: #fff;
+  color: #333;
+  position: fixed;
+  top: 32%;
+  right: -500px;
+  width: 400px;
+  height: auto;
+  transform: translateY(-50%);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#slideout.on {
+  right: 20px;
+}
+
+#slideout .box {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#slideout .box .emp-det {
+  padding: 0 20px;
+}
+
+.row .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.row .img img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row .img div {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #4A90E2, #50E3C2);
+  border-radius: 50%;
+}
+
+.row .det {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.row .det p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.row .close {
+  text-align: right;
+  padding: 10px 15px;
+}
+
+.row .close button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #777;
+}
+
+.row .change,
+.row .signout {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.row .change button,
+.row .signout p {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.row .change button {
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+}
+
+.row .signout p {
+    margin: 2% 0px 0px 15%;
+    cursor: pointer;
+    color: #f16565;
+    padding: 0 0 0 40px;
+}
+
+.org-det {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.org-det h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.row .signout p .sn-ic{
+  margin: 0 3px 0 0;
+  font-size: 16px;
+}
+.org-det .det-wrap{
+  padding: 0 1%;
+  background: #fff;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+}
+.org-det .det-wrap .org-wrapper{
+  padding: 8px 5px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+  transition: opacity 0.3s ease; 
+}
+
+.overlay.ng-enter {
+  opacity: 0;
+}
+
+.overlay.ng-enter-active {
+  opacity: 1;
+}
+
+.overlay.ng-leave {
+  opacity: 1;
+}
+
+.overlay.ng-leave-active {
+  opacity: 0;
+}
+
+.row .change{
+  margin: 2%  0px 0 0%;
+  text-align: end;
+  cursor: pointer;
+  color: #f16565;
+  width: 50%;
+  padding: 0 0 0 7px;
+}
+.change-password-modal {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-password-modal .modal-content {
+  background-color: #edf1f5;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+form {
+  display: inline-block;
+  width: 100%;
+}
+
+.form .input-div {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 5% 0;
+}
+
+.input-div .input-field {
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  position: relative;
+  margin: 4px 0px;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  background: none;
+  font-size: 14px;
+  padding: 10px 10px 10px 30px;
+  border-radius: 5px;
+}
+.change-actions{
+  text-align: end;
+}
+.change-password-modal .btn {
+  padding: 3px 10px;
+  border: none;
+  cursor: pointer;
+  margin: 3% 1% 0 0;
+  font-size: 13px;
+}
+.fa-lock{
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  cursor: pointer;
+  color: #bba9a9e0;
+}
+.fa-envelope{
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  cursor: pointer;
+  color: #bba9a9e0;
+}
+.fa-eye{
+  position: absolute;
+  top: 13px;
+  right: 7px;
+  color: #bba9a9e0;
+  cursor: pointer;
+}
+.fa-eye-slash{
+  position: absolute;
+  top: 13px;
+  right: 7px;
+  color: #bba9a9e0;
+  cursor: pointer;
+}
+/* Button style */
+.btn-grey {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 5px 11px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-grey:hover {
+  background-color: #5a6268;  
+}
+
+.btn-grey:focus {
+  outline: none;            
+}
+
+  @media only screen and (min-width: 320px) and (max-width: 991px){
+    .pv_logo_div a span{
+      position: absolute;
+      left: 34px;
+      top: 9px;
+      font-size: 15px;
+      line-height: normal;
+    }
+    .dt_div {
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+        width: 150%;
+        padding: 0px 0 0 0;
+        vertical-align: middle;
+        text-align: right;
+        position: absolute;
+        right: 0px;
+        top: 40px;
+        min-width: 170%;
+    }
+    .pv_logo_div a img {
+        display: inline-block;
+        width: 40%;
+        /* background: #f1f1f1 0% 0% no-repeat padding-box; */
+        border-radius: 3px;
+        margin: 0 5px 0 0;
+    }
+    .hdr_cf header {
+        display: inline-block;
+        width: 100%;
+        opacity: 1;
+        padding: 5px 10px;
+        align-items: center;
+        vertical-align: top;
+    }
+    .pv_logo_div {
+
+      vertical-align: top;
+      width: 35%;
+      /* float: left; */
+      padding: 0px 0;
+    }
+    .pv_search_div {
+
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        position: relative;
+        padding: 0 0;
+        width: 43%;
+        float: left;
+    }
+    .pv_search_div{
+        padding: 0 0 0 10px;
+    }
+    .pv_nf_pf  {
+    padding: 0 25px;
+    position: absolute;
+    top: 3px;
+    }
+    .pv_nf_pf button {
+      display: inline-block;
+      background: none;
+      padding: 6px 10px;
+      width: auto;
+      font-size: 20px;
+    }
+    .pv_nf_pf .profile {
+      display: inline-block;
+  }
+  .pv_nf_pf .profile img {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+    .pv_nf_pf .dropdown {
+        display: inline-block;
+        width: 40%;
+        border-radius: 50%;
+    }
+    .pv_nf_pf button img {
+        display: inline-block;
+        width: 55%;
+        padding: 2px;
+    }
+    .side_logo_div {
+      padding: 0;
+      width: 21%;
+      display: inline-block;
+      margin-left: 40px;
+  }
+  .side_logo_div .small img {
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+}
+.side_logo_div .big img {
+  cursor: pointer;
+  width: 105px;
+}
+#slideout {
+  width: 300px;
+  height: 55%;
+}
+.row .img {
+  text-align: -webkit-center;
+  width: 100%;
+}
+.row .det {
+  padding: 9px 0px 0 0px;
+  margin: 0 0 0 0px;
+  text-align: center;
+}
+.row .change {
+     margin: 7px 0px 0 0;
+}
+.row .close {
+  padding: 5px 8px;
+  position: absolute;
+  text-align: end;
+  right: -17px;
+  top: -13px;
+}
+.row .signout {
+  padding: 0;
+  margin: 11px 0 0 0;
+  text-align: end;
+  width: 50%;
+}
+
+  }
+  @media only screen and (min-width:768px) and  (max-width:1024px){
+    .pv_logo_div a span{
+      position: absolute;
+      left: 1rem;
+      top: 10px;
+      font-size: 22px;
+      /* line-height: normal; */
+    }
+    .dt_div{
+        top:45px;
+    }
+    .navbarbtn{
+        display:none !important;
+    }
+    .hdr_cf header {
+      display: inline-block;
+      width: 100%;
+      opacity: 1;
+      padding: 5px 10px;
+      align-items: center;
+      vertical-align: top;
+    }
+    .pv_logo_div {
+      width: 30%;
+    }
+    .pv_search_div {
+        width: 52%;
+    }
+    .pv_nf_pf {
+      width: 26%;
+    }
+    .pv_nf_pf button {
+      display: inline-block;
+      background: none;
+      padding: 8px 17px;
+      width: auto;
+      font-size: 25px;
+  }
+  .pv_nf_pf .profile img {
+    display: inline-block;
+    height: 35px;
+    width: 36px;
+    border-radius: 50%;
+}
+    .pv_nf_pf .dropdown {
+        display: inline-block;
+        width: 25%;
+        border-radius: 50%;
+    }
+    .side_logo_div {
+      padding: 0;
+      width: 31%;
+      display: inline-block;
+      margin-left: 9%;
+  }
+  .side_logo_div .big img {
+    cursor: pointer;
+    width: 132px;
+}
+.side_logo_div .small img {
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+}
+#slideout {
+  height: 20%;
+}
+
+
+    }
+    @media only screen and (min-width:1024px) and  (max-width: 1365px){
+        .pv_logo_div a img {
+            display: inline-block;
+            width: 20%;
+            border-radius: 3px;
+            margin: 0 5px 0 0;
+        }
+        .pv_logo_div a span {
+            position: absolute;
+            left: 5rem;
+            top: 1.8rem;
+            font-size: 12px;
+            line-height: normal;
+        }
+    }

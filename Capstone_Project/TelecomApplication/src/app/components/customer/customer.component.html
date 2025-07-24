@@ -1,0 +1,130 @@
+<div class="block-div">
+  <div class="heading-box">
+    <h1>Customer</h1>
+  </div>
+  <app-toast></app-toast>
+  <p-confirmDialog></p-confirmDialog>
+
+  <div>
+    <mat-tab-group [(selectedIndex)]="selectedTabIndex" #tabs (selectedTabChange)="onViewTabSelect($event)">
+      <mat-tab label="View">
+        <div class="block-div-box">
+          <div class="table-responsive">
+            <p-table [value]="filteredData" [(selection)]="selectedRow" selectionMode="single" [paginator]="true"
+              [rows]="10" [rowsPerPageOptions]="[5, 10, 20]" [resizableColumns]="true" [sortMode]="'multiple'">
+              <!-- Table Header -->
+              <ng-template pTemplate="header">
+                <tr>
+                  <th pSortableColumn="id">Customer Id <p-sortIcon field="id"></p-sortIcon></th>
+                  <th pSortableColumn="firstname">Customer Name <p-sortIcon field="firstname"></p-sortIcon></th>
+                  <th pSortableColumn="email">Email<p-sortIcon field="email"></p-sortIcon></th>
+                  <th pSortableColumn="phone">Phone No. <p-sortIcon field="phone"></p-sortIcon></th>
+                  <th>Actions</th>
+                </tr>
+              </ng-template>
+
+              <!-- Table Body -->
+              <ng-template pTemplate="body" let-element>
+                <tr [pSelectableRow]="element">
+                  <td>{{element.id}}</td>
+                  <td>{{element.firstname}} {{element.lastname}}</td>
+                  <td>{{element.email}}</td>
+                  <td>{{element.phone}}</td>
+                  <td>
+                    <button class="edit-icon" (click)="EditDetails(element)">
+                      <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button class="delete-icon" (click)="delete(element)">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+
+              </ng-template>
+
+              <!-- Empty Message -->
+              <ng-template pTemplate="emptymessage">
+                <tr>
+                  <td colspan="6">No records found</td>
+                </tr>
+              </ng-template>
+
+
+              <ng-template pTemplate="footer">
+                <tr>
+                  <td colspan="6">Total records: {{ filteredData.length }}</td>
+                </tr>
+              </ng-template>
+            </p-table>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab [label]="openTab ? 'Edit' : 'Add'">
+        <div class="block-div-box">
+          <form #userForm="ngForm" class="form-container">
+            <div class="form-row">
+              <div class="col-md-4 form-group input-row">
+                <label class="cat__core__step__title">First Name<span class="text-danger">
+                    *</span> </label>
+                <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc"
+                  [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" name="firstname" required
+                  placeholder="Enter First Name" [ngClass]="{ 'is-invalid': !firstname && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !firstname ">First Name is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+                <label class="cat__core__step__title">Last Name<span class="text-danger">
+                    *</span> </label>
+                <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc"
+                  [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" name="lastname" required
+                  placeholder="Enter Last Name" [ngClass]="{ 'is-invalid': !lastname && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !lastname ">Last Name is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+                <label class="cat__core__step__title">Location<span class="text-danger">
+                    *</span> </label>
+                <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc"
+                  [(ngModel)]="location" [ngModelOptions]="{standalone: true}" name="location" required
+                  placeholder="Enter Location" [ngClass]="{ 'is-invalid': !location && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !location ">Location is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+                <label class="cat__core__step__title">Email Id<span class="text-danger">
+                    *</span> </label>
+                <input type="email" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="email"
+                  [ngModelOptions]="{standalone: true}" name="email" required
+                  placeholder="Enter Email Id" [ngClass]="{ 'is-invalid': !email && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !email ">Email Id is required</small>
+              </div>
+              <div class="col-md-4 form-group input-row">
+                <label class="cat__core__step__title">Phone Number<span class="text-danger">
+                    *</span> </label>
+                <input type="text" [style]="{'width':'100%'}" class="form-control form-control-plc" [(ngModel)]="phone"
+                  [ngModelOptions]="{standalone: true}" maxlength="10"name="phone" required placeholder="Enter phone Number"
+                  [ngClass]="{ 'is-invalid': !phone && !isValidated }">
+                <small class="text-danger" *ngIf="!isValidated && !phone">Phone Number is required</small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 form-group input-row">
+                <label class="cat__core__step__title">Plan<span class="text-danger">
+                    *</span> </label>
+                <p-dropdown [options]="planlist" [(ngModel)]="plan"
+                  [ngModelOptions]="{standalone: true}" [filter]="true" filterBy="name"
+                  [showClear]="true" placeholder="Select Plan" [dropdownIcon]="'none'"
+                  [resetFilterOnHide]="true" optionValue="id" optionLabel="name"
+                  [ngClass]="{ 'is-invalid': !plan && !isValidated }">
+                </p-dropdown>
+                <small class="text-danger" *ngIf="!isValidated && !plan ">Plan is required</small>
+              </div>
+
+            </div>
+            <div class="form-actions">
+              <button type="submit" *ngIf="!openTab" class="btn-save clr-btn" (click)="save()">Submit</button>
+              <button type="submit" *ngIf="openTab" class="btn-save clr-btn" (click)="update()">Update</button>
+            </div>
+          </form>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

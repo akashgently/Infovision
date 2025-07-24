@@ -1,0 +1,10 @@
+com\UsageService\service\UsageLogScheduler.class
+com\UsageService\util\RandomUsageGenerator.class
+com\UsageService\dto\UsageLogDto.class
+com\UsageService\service\UsageLogService.class
+com\UsageService\UsageServiceApplication.class
+com\UsageService\entity\UsageLog.class
+com\UsageService\controller\UsageController.class
+com\UsageService\repository\UsageLogRepository.class
+com\UsageService\service\LogSimulationJob.class
+com\UsageService\entity\UsageLog$UsageLogBuilder.class

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md">
+  <div class="collapse_a" style="padding: 0 0 35px 0;">
+    <ul class="navbarnav">
+      <li class="nav-item" *ngIf="userType === 'admin'">
+        <a routerLink="/master" class="nav-link" routerLinkActive="active">
+          <i class="bi bi-house" aria-hidden="true"></i> <span> Master</span>
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="userType === 'admin'">
+        <a routerLink="/customer" class="nav-link" routerLinkActive="active">
+          <i class="bi bi-people" aria-hidden="true"></i><span> Customer</span>
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="userType === 'admin'">
+        <a routerLink="/customer-usage-logs" class="nav-link" routerLinkActive="active">
+          <i class="bi bi-bar-chart" aria-hidden="true"></i> <span> Customer Usage Logs</span>
+        </a>
+      </li> 
+      <li class="nav-item" *ngIf="userType === 'admin'">
+        <a routerLink="/bill" class="nav-link" routerLinkActive="active">
+          <i class="bi bi-credit-card" aria-hidden="true"></i> <span> Customer Bills</span>
+        </a>
+      </li>    
+      <li class="nav-item" *ngIf="userType === 'user'">
+        <a routerLink="/dashboard" class="nav-link" routerLinkActive="active">
+          <i class="bi bi-speedometer" aria-hidden="true"></i> <span> Customer Dashboard</span>
+        </a>
+      </li>   
+    </ul>
+  </div>
+</nav>

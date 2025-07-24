@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  max-width: 400px;
+  width: 100%;
+}
+
+
+.main-box {
+  background: #6643b7 !important;
+}
+
+
+
+.login-content {
+  background-color: #ffffff;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  padding: 60px 27px;
+  z-index: 2;
+  position: relative;
+}
+
+.login-div .logo {
+  width: 95px;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  left: 27px;
+}
+
+.login-content .ele-img-top {
+  width: 36%;
+  height: auto;
+  position: absolute;
+  top: -4rem;
+  right: -1rem;
+  // filter: drop-shadow(10px 30px 24px #fde805);
+  filter: drop-shadow(10px 30px 50px #fde805);
+}
+
+.login-div .ele-img-bottom {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  float: right;
+  right: 85%;
+  z-index: 1;
+  bottom: 30%;
+}
+
+.login-content .ele-img-square {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: -30px;
+  right: 40%;
+}
+
+form {
+  display: inline-block;
+  width: 100%;
+}
+
+.login-content form .input-div {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 5% 0;
+}
+
+.input-div .input-field {
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+  background: #f5f5f5;
+  position: relative;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  background: none;
+  font-size: 14px;
+  padding: 10px 10px 10px 30px;
+  border-radius: 5px;
+}
+
+.input-field .i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  color: #aaa;
+  height: 100%;
+  padding: 10px 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  background: rgb(255, 231, 92);
+  background: linear-gradient(299deg, rgb(223, 111, 38) 0%, rgb(249, 192, 45) 90%);
+  color: #ffffff;
+  padding: 10px 0;
+  margin: 0px 0px 7px 0;
+}
+
+.login-content h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+  font-family: Roboto, sans-serif;
+  letter-spacing: .0125em;
+  margin: 0%;
+  width: 100%;
+}
+
+.login-content p {
+  font-family: Roboto, sans-serif;
+  letter-spacing: .0125em;
+  margin: 0 0 25px;
+  width: 100%;
+}
+
+.action-icon {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  font-size: 14px;
+  color: #aaa;
+  height: auto;
+  padding: 10px 10px;
+  background: no-repeat;
+}
+
+.text-overlay {
+  position: absolute;
+  right: 45%;
+  top: 43.9%;
+  background: #181727;
+  padding: 0 5% 0 5%;
+}
+
+hr {
+  background-color: #474747;
+  height: 1px;
+  border: none;
+  margin: 0px 0px 18px 0px;
+}
+
+.or {
+  position: relative;
+  right: 45%;
+  top: 43.9%;
+  padding: 0 5% 0 5%;
+}
+
+.google-div {
+  display: inline-block;
+  // align-self: center;
+  // justify-content: space-between;
+  // align-items: center;
+  width: 100%;
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #afafaf;
+}
+
+.logo-google {
+  width: 20px;
+  height: 20px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider1::before,
+.divider1::after {
+  content: "";
+  flex: 1;
+}
+
+.divider1 span {
+  color: #888;
+  cursor: pointer;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  margin: 0 10px;
+  color: #888;
+  font-weight: bold;
+}

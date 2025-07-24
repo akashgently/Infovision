@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2690095-799b-45b2-aff4-255f432c1815" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/jwt/TenantFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIGateway/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIGateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APIGateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../APIGateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/dto/SavedRecordResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/dto/SavedRecordResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/entity/UserDE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/entity/UserDE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/jwt/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/jwt/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/utility/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/src/main/java/com/AuthService/utility/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/15.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/16.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/17.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/18.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/19.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/.angular/cache/16.2.16/angular-webpack/5623749fb99015a0d2d6817c61d8d6fecdad619d/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer-usage-logs/customer-usage-logs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer-usage-logs/customer-usage-logs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer-usage-logs/customer-usage-logs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer-usage-logs/customer-usage-logs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer-usage-logs/customer-usage-logs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer-usage-logs/customer-usage-logs.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer/customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer/customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/customer/customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/plan/plan.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/plan/plan.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/components/sidebar-menu/sidebar-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/components/sidebar-menu/sidebar-menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelecomApplication/src/app/service/loginservice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TelecomApplication/src/app/service/loginservice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/repository/UsageLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/repository/UsageLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/service/UsageLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/service/UsageLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/util/RandomUsageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UsageService/src/main/java/com/UsageService/util/RandomUsageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsageService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../UsageService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/config/FilterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/jwt/TenantFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/jwt/TenantFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/UserService/service/CustomerService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="305sKTPY71xZo76BWb93Rn2yoDD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DiscoveryClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in DiscoveryClient.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DiscoveryClient [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/github/Infovision/Capstone_Project/E-Server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.DiscoveryClientApplication">
+    <configuration name="DiscoveryClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.DiscoveryClient.DiscoveryClientApplication" />
+      <module name="DiscoveryClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DiscoveryClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in DiscoveryClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiscoveryClient" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DiscoveryClientApplication" />
+      <item itemvalue="JUnit.All in DiscoveryClient" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DiscoveryClientApplication" />
+        <item itemvalue="JUnit.All in DiscoveryClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2690095-799b-45b2-aff4-255f432c1815" name="Changes" comment="" />
+      <created>1752928703359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752928703359</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<div class="toast-container">
+  <div *ngFor="let toast of toasts" class="toast" [ngClass]="toast.type">
+    <div class="icon-container" [ngClass]="toast.type">
+      <i *ngIf="toast.type === 'success'" class="bi bi-check2-circle"></i>
+      <i *ngIf="toast.type === 'error'" class="bi bi-exclamation-triangle"></i>
+      <i *ngIf="toast.type === 'info'" class="bi bi-info-circle"></i>
+      <i *ngIf="toast.type === 'warning'" class="bi bi-exclamation-circle"></i>
+    </div>
+    <div class="message-container">
+      <strong *ngIf="toast.type === 'success'">Success</strong>
+      <strong *ngIf="toast.type === 'error'">Error</strong>
+      <strong *ngIf="toast.type === 'info'">Info</strong>
+      <strong *ngIf="toast.type === 'warning'">Warning</strong>
+      <small>{{ toast.message }}</small>
+    </div>
+    <button class="close" (click)="removeToast(toast)">×</button>
+  </div>
+</div>
